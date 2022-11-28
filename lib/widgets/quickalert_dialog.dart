@@ -15,9 +15,11 @@ class QuickAlert {
 
     /// Title of the dialog
     String? title,
+    TextStyle? titleTextStyle,
 
     /// Text of the dialog
     String? text,
+    TextStyle? textStyle,
 
     /// Custom Widget of the dialog
     Widget? widget,
@@ -72,6 +74,7 @@ class QuickAlert {
 
     /// Asset path of your Image file
     String? customAsset,
+    Color? customAssetBackgroundColor,
 
     /// Width of the dialog
     double? width,
@@ -87,7 +90,9 @@ class QuickAlert {
 
     final options = QuickAlertOptions(
       title: title,
+      titleTextStyle: titleTextStyle,
       text: text,
+      textStyle: textStyle,
       widget: widget,
       type: type,
       animType: animType,
@@ -105,6 +110,7 @@ class QuickAlert {
       showCancelBtn: showCancelBtn,
       borderRadius: borderRadius,
       customAsset: customAsset,
+      customAssetBackgroundColor: customAssetBackgroundColor,
       width: width,
     );
 

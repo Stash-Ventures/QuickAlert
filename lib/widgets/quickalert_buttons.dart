@@ -17,8 +17,8 @@ class QuickAlertButtons extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          cancelBtn(context),
           okayBtn(context),
+          cancelBtn(context),
         ],
       ),
     );

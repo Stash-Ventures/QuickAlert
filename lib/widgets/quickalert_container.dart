@@ -91,6 +91,7 @@ class QuickAlertContainer extends StatelessWidget {
       child: Image.asset(
         anim ?? "",
         fit: BoxFit.cover,
+        color: options!.customAssetBackgroundColor,
       ),
     );
   }
@@ -101,9 +102,10 @@ class QuickAlertContainer extends StatelessWidget {
       visible: title != null,
       child: Text(
         '$title',
-        style: Theme.of(context).textTheme.headline6!.copyWith(
-              color: options!.titleColor,
-            ),
+        style: options?.titleTextStyle ??
+            Theme.of(context).textTheme.headline6!.copyWith(
+                  color: options!.titleColor,
+                ),
       ),
     );
   }
@@ -121,9 +123,10 @@ class QuickAlertContainer extends StatelessWidget {
       return Text(
         text ?? '',
         textAlign: TextAlign.center,
-        style: TextStyle(
-          color: options!.textColor,
-        ),
+        style: options?.textStyle ??
+            TextStyle(
+              color: options!.textColor,
+            ),
       );
     }
   }

@@ -7,8 +7,12 @@ class QuickAlertOptions {
   /// Title of the dialog
   String? title;
 
+  TextStyle? titleTextStyle;
+
   /// Text of the dialog
   String? text;
+
+  TextStyle? textStyle;
 
   /// Custom Widget of the dialog
   Widget? widget;
@@ -61,6 +65,8 @@ class QuickAlertOptions {
   /// Asset path of your Image file
   String? customAsset;
 
+  Color? customAssetBackgroundColor;
+
   /// Width of the dialog
   double? width;
 
@@ -68,9 +74,11 @@ class QuickAlertOptions {
   QuickAlertOptions({
     /// Title of the dialog
     this.title,
+    this.titleTextStyle,
 
     /// Text of the dialog
     this.text,
+    this.textStyle,
 
     /// Custom Widget of the dialog
     this.widget,
@@ -122,6 +130,7 @@ class QuickAlertOptions {
 
     /// Asset path of your Image file
     this.customAsset,
+    this.customAssetBackgroundColor,
 
     /// Width of the dialog
     this.width,
