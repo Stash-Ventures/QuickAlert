@@ -102,6 +102,7 @@ class QuickAlert {
       confirmBtnText: confirmBtnText,
       cancelBtnText: cancelBtnText,
       confirmBtnColor: confirmBtnColor,
+      cancelBtnColor: cancelBtnColor,
       confirmBtnTextStyle: confirmBtnTextStyle,
       cancelBtnTextStyle: cancelBtnTextStyle,
       backgroundColor: backgroundColor,
