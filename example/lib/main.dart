@@ -134,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
           type: QuickAlertType.custom,
           barrierDismissible: true,
           confirmBtnText: 'Save',
-          customAsset: 'assets/custom.gif',
+          customAsset: const Text('Custom'),
           widget: TextFormField(
             decoration: const InputDecoration(
               alignLabelWithHint: true,

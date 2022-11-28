@@ -65,9 +65,7 @@ class QuickAlertOptions {
   double? borderRadius;
 
   /// Asset path of your Image file
-  String? customAsset;
-
-  Color? customAssetBackgroundColor;
+  Widget? customAsset;
 
   /// Width of the dialog
   double? width;
@@ -133,7 +131,6 @@ class QuickAlertOptions {
 
     /// Asset path of your Image file
     this.customAsset,
-    this.customAssetBackgroundColor,
 
     /// Width of the dialog
     this.width,

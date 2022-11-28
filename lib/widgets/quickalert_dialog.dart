@@ -74,8 +74,7 @@ class QuickAlert {
     double borderRadius = 15.0,
 
     /// Asset path of your Image file
-    String? customAsset,
-    Color? customAssetBackgroundColor,
+    Widget? customAsset,
 
     /// Width of the dialog
     double? width,
@@ -111,7 +110,6 @@ class QuickAlert {
       showCancelBtn: showCancelBtn,
       borderRadius: borderRadius,
       customAsset: customAsset,
-      customAssetBackgroundColor: customAssetBackgroundColor,
       width: width,
     );
 

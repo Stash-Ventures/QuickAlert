@@ -78,9 +78,6 @@ class QuickAlertContainer extends StatelessWidget {
         break;
     }
 
-    if (options!.customAsset != null) {
-      anim = options!.customAsset;
-    }
     return Container(
       width: double.infinity,
       height: 150,
@@ -88,11 +85,11 @@ class QuickAlertContainer extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.5),
       ),
-      child: Image.asset(
-        anim ?? "",
-        fit: BoxFit.cover,
-        color: options!.customAssetBackgroundColor,
-      ),
+      child: options!.customAsset ??
+          Image.asset(
+            anim ?? "",
+            fit: BoxFit.cover,
+          ),
     );
   }
 
