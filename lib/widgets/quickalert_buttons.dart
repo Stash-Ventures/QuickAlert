@@ -73,30 +73,36 @@ class QuickAlertButtons extends StatelessWidget {
       style: defaultTextStyle(isOkayBtn),
     );
 
-    final okayBtn = MaterialButton(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15.0),
-      ),
-      color: options!.confirmBtnColor ?? Theme.of(context!).primaryColor,
-      onPressed: onTap,
-      child: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(7.5),
-          child: btnText,
+    final okayBtn = Container(
+      margin: const EdgeInsets.only(left: 10, right: 10),
+      child: MaterialButton(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15.0),
+        ),
+        color: options!.confirmBtnColor ?? Theme.of(context!).primaryColor,
+        onPressed: onTap,
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(7.5),
+            child: btnText,
+          ),
         ),
       ),
     );
 
-    final cancelBtn = MaterialButton(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15.0),
-      ),
-      color: options!.cancelBtnColor ?? Theme.of(context!).primaryColor,
-      onPressed: onTap,
-      child: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(7.5),
-          child: btnText,
+    final cancelBtn = Container(
+      margin: const EdgeInsets.only(left: 10, right: 10),
+      child: MaterialButton(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15.0),
+        ),
+        color: options!.cancelBtnColor ?? Theme.of(context!).primaryColor,
+        onPressed: onTap,
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(7.5),
+            child: btnText,
+          ),
         ),
       ),
     );
