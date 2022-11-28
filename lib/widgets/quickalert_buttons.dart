@@ -87,10 +87,17 @@ class QuickAlertButtons extends StatelessWidget {
       ),
     );
 
-    final cancelBtn = GestureDetector(
-      onTap: onTap,
+    final cancelBtn = MaterialButton(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15.0),
+      ),
+      color: options!.cancelBtnColor ?? Theme.of(context!).primaryColor,
+      onPressed: onTap,
       child: Center(
-        child: btnText,
+        child: Padding(
+          padding: const EdgeInsets.all(7.5),
+          child: btnText,
+        ),
       ),
     );
 

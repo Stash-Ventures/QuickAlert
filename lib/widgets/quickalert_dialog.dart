@@ -47,6 +47,7 @@ class QuickAlert {
 
     /// Color for confirm button
     Color confirmBtnColor = Colors.blue,
+    Color cancelBtnColor = Colors.grey,
 
     /// TextStyle for confirm button
     TextStyle? confirmBtnTextStyle,
