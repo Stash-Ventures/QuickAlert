@@ -100,7 +100,7 @@ class QuickAlertContainer extends StatelessWidget {
       child: Text(
         '$title',
         style: options?.titleTextStyle ??
-            Theme.of(context).textTheme.headline6!.copyWith(
+            Theme.of(context).textTheme.headlineLarge!.copyWith(
                   color: options!.titleColor,
                 ),
       ),
